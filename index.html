@@ -5,6 +5,7 @@
         <title>Login</title>
         <link rel="stylesheet" href="css/estilo.css">
         <link rel="stylesheet" href="css/estiloLogin.css">
+        <script type="text/javascript" src="javascript/script.js"></script>
     </head>
 
     <body>
@@ -13,7 +14,7 @@
             <form>
                 <input required type="text" name="txtLogin" id="Login" maxlength="45" placeholder="Login">
                 <input required type="password" name="txtSenha" id="Senha" maxlength="20" placeholder="Senha"> <br>
-                <button type="submit" class="btn-entrar btn" onclick="direciona()">Entrar</button>
+                <button type="submit" class="btn-entrar btn" onclick="funclogin('Login','Senha');" >Entrar</button>
             </form>
         </main>
     </body>
