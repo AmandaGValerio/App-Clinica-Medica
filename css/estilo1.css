@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    /**/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    height: 10vh;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 60px;
+    height: 88vh;
+}
+
+
+
+main button{
+    padding: 30px;
+    width: 400px;
+    font-size: 24pt;
+    border: none;
+    border-radius: 7px;
+    border-radius: 20px;
+    border: 1px solid rgb(226, 234, 240);
+    box-shadow: 5px 10px 18px rgba(0,0,0,.2);
+}
+
+input{
+    margin: 2vh auto;
+    border: 1px solid grey;
+    border-radius: 8px;
+    padding: 2vh;
+    font-size: 12pt;
+    width: 80%;
+}
+
+p{
+    font-size: 16pt;
+    font-family: Arial, Helvetica, sans-serif;
+    /**//*text-align: center;*/
+}
+
+
+/*Botões*/
+button.btn{
+    border: none;
+    border-radius: 7px;
+    padding: 8px 15px;
+    color: white;
+    background-color: lightcoral;
+    width: fit-content;
+    font-size: 12pt;
+}
+
+button.btn-sair{
+    margin: 1.5% 0 0 92%;
+}
+
+button.btn-voltar{
+    margin: 1.5% 0 0 3%;
+}
+
+button.btn-entrar{
+    margin: 1vw auto;
+}
+
+
+
+/**/
+/* .container{
+    border: 1px solid gray;
+    border-radius: 20px;
+    width: 80%;
+    height: 350px;
+    margin: 0 auto;
+} */
+
+button.diversos{
+    margin: 5px;
+    width: 100px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    border: 1px solid rgb(226, 234, 240);
+    box-shadow: 5px 10px 18px rgba(0,0,0,.2);
+}

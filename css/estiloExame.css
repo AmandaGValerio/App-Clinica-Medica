@@ -1,0 +1,21 @@
+div#filtro{
+    /*border: 1px solid black;*/
+    text-align: right;
+    width: 90%;
+    margin: 0 auto;
+}
+
+div#filtro select{
+    margin: 5px;
+    width: 150px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    border: 1px solid rgb(226, 234, 240);
+    box-shadow: 5px 10px 18px rgba(0,0,0,.2);
+    padding: 10px;
+}
+
+button.diversos{
+    padding: 15px;
+}

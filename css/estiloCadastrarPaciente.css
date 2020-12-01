@@ -1,0 +1,18 @@
+form{
+    width: 55%;
+    margin: 0 auto;
+}
+
+label{
+    font-size: 14pt;
+}
+
+input{
+    margin: 1.5vh auto;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 1.5vh;
+    font-size: 12pt;
+    width: 100%;
+}
+

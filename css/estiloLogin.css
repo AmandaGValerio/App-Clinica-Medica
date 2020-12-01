@@ -1,0 +1,25 @@
+main{
+    width: 50vw;
+    height: 60vh;
+    margin: 20vh auto;
+    border-radius: 20px;
+    border: 1px solid rgb(226, 234, 240);
+    box-shadow: 5px 10px 18px rgba(0,0,0,.2);
+    padding: 5vh 3vw;
+    text-align: center;
+}
+
+input{
+    margin: 2vh auto;
+    border: 1px solid grey;
+    border-radius: 8px;
+    padding: 1.5vh;
+    font-size: 12pt;
+    width: 80%;
+}
+
+form{
+    margin-top: 6vh;
+}
+
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cadastrar Paciente</title>
+        <link rel="stylesheet" href="../css/estilo.css">
+        <link rel="stylesheet" href="../css/estiloCadastrarPaciente.css">
+    </head>
+
+    <body>
+
+        <header>
+            <a href=""><button class="btn-voltar btn">Voltar</button></a>
+        </header>
+
+        <main>
+            <p class="titulo1">Cadastrar Paciente</p>
+            <form>
+                <p>
+                    <label for="cNome">Nome:</label> <br>
+                    <input required type="text" id="Nome" name="txtNome" size="40" maxlength="35" placeholder="Nome completo">
+                </p>
+                <p>
+                    <label for="cNasc">Data de nascimento:</label> <br>
+                    <input required type="date" id="Nasc" name="txtNasc">
+                </p>
+                <p>
+                    <label for="cConv">Convênio:</label> <br>
+                    <input required type="text" id="Convenio" name="txtConvenio" size="40" maxlength="35" placeholder="Convênio">
+                </p>
+                <p>
+                    <label for="cTel">Telefone:</label> <br>
+                    <input required type="text" id="Telefone" name="txtTelefone" size="40" maxlength="35" placeholder="Telefone">
+                </p>
+                <p>
+                    <label for="cCpf">CPF:</label> <br>
+                    <input required type="text" id="cpf" name="txtCpf" size="40" maxlength="35" placeholder="Telefone">
+                </p>
+
+                <div class="botoes">
+                    <button class="btn">Cancelar</button>
+                    <button class="btn">Salvar</button>
+                </div>
+            </form>
+
+        </main>
+
+    </body>
+</html>
