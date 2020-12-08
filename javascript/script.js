@@ -15,9 +15,17 @@ function funclogin(usuario, senha){
         //verifica a senha
         if (BDpassword[indice] == password){
             //redirecionar para a página
-
-
-
+            switch (indice){
+                case 1:
+                    window.location.href = "paginas/homeR.html";
+                    break;
+                case 2:
+                case 3: 
+                    window.location.href = "paginas/homeM.html";
+                    break;
+                default:
+                    alert("Ocorreu um problema no login");
+            }
         }
         else{
             alert("Senha incorreta!");
