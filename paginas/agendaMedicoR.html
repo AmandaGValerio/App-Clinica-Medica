@@ -2,27 +2,106 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <title>Agenda</title>
+        <title>Agenda - Dr. João</title>
         <link rel="stylesheet" href="../css/estilo.css">
+        <link rel="stylesheet" href="../css/estiloMenu.css">
         <link rel="stylesheet" href="../css/estiloAgenda.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+    
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     </head>
 
     <body>
-        <header>
-            <a href=""><button class="btn-voltar btn">Voltar</button></a>
-            <button class="btn-whats">Enviar Mensagem de confirmação</button>
-        </header>
+        <script>
+            $(document).ready(function() {
+                $("#sidebarCollapse").on("click", function() {
+                    $("#sidebar").toggleClass("active");
+                    $(this).toggleClass("active");
+                });
+            });
+        </script>
         
-        <main>
-            <label id="data">Agenda Dr. X</label>
-            <label id="data">dd/mm/aaaa</label>
-            <div class="paciente"> 
-                <label>hh:mm</label>
-                <div class="dadosPaciente">
-                    Nome do Paciente | Telefone
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>Clínica NomeClínica</h3>
                 </div>
-                <button id="desmarcar"><img src="../imagens/x.png">Desmarcar</button>
+          
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="#agendaSubmenu" data-toggle="collapse" aria-expanded="false">Agenda</a>
+                        <ul class="collapse list-unstyled" id="agendaSubmenu">
+                            <li><a href="#">Dr. João</a></li>
+                            <li><a href="#">Dra. Ana</a></li>
+                            <li><a href="#">Dra. Maria</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Buscar Paciente</a>
+                    </li>
+                    <li>
+                        <a href="#">Cadastrar Paciente</a>
+                    </li>
+                </ul>
+          
+                <ul class="list-unstyled sair">
+                    <li><a href="../index.html" class="btn-sair">Sair</a></li>
+                </ul>
+            </nav>
+          
+            <!-- Conteúdo da Página -->
+            <div id="content">
+                <div class="row my-4 mx-3">
+                    <div class="col-md-8">
+                        <button type="button" id="sidebarCollapse" class="btn btn-menu"><span>Menu</span></button> 
+                    </div>
+                     <div class="col-md-4">
+                        <button class="btn btn-whats bg-success text-light"><span>Enviar Mensagem de confirmação</spa></button>
+                     </div>
+                    
+                </div>
+
+                <div id="conteudo" class="container">
+                    <div class="row m-4">
+                        <div class="col-md-9">
+                            <h1 class="titulo-pag">Agenda - Dr. João</h1>
+                        </div>
+                        <div class="col-md-3">
+                            <h2 id="data">dd/mm/aaaa</h2>
+                        </div>
+                    </div>
+                    <div class="row m-4 paciente"> 
+                        <div class="col-md-1 text-center">
+                            <label>hh:mm</label>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="dadosPaciente ml-2">
+                                Nome do Paciente |  Telefone
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <button id="desmarcar">Desmarcar</button>
+                        </div>     
+                    </div>
+                    <div class="row m-4 paciente"> 
+                        <div class="col-md-1 text-center">
+                            <label>hh:mm</label>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="dadosPaciente ml-2">
+                                Nome do Paciente |  Telefone
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <button id="desmarcar">Desmarcar</button>
+                        </div>     
+                    </div>
+                </div>
+
             </div>
-        </main>
+        </div>
     </body>
 </html>
