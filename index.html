@@ -3,20 +3,53 @@
     <head>
         <meta charset="UTF-8">
         <title>Login</title>
-        <link rel="stylesheet" href="css/estilo.css">
         <link rel="stylesheet" href="css/estiloLogin.css">
-        <script type="text/javascript" src="javascript/script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
 
     <body>
+        <script src="javascript/jsLogin.js"></script>
+
         <main>
-            <p class="titulo1">Nome da Clínica</p>
-            <form>
-                <input required type="text" name="txtLogin" id="Login" maxlength="45" placeholder="Login">
-                <input required type="password" name="txtSenha" id="Senha" maxlength="20" placeholder="Senha"> <br>
-                <button type="submit" class="btn-entrar btn" onclick="funclogin('Login','Senha');" >Entrar</button>
-                <!--A senha esta aparecendo na url, precisamos trocar isso-->
-            </form>
+            <div class="login">
+                <div class="nav">
+                    <ul class="links">
+                        <li class="signin-active"><a class="btn">Sign in</a></li>
+                        <li class="signup-inactive"><a class="btn">Sign up </a></li>
+                    </ul>
+                </div>
+            
+                <div ng-app ng-init="checked = false">
+                    <form class="form-signin" action="" method="post" name="form">
+                        <label for="username">Usuário</label>
+                        <input id="usuario" class="form-styling" type="text" name="username" />
+                        <label for="password">Senha</label>
+                        <input id="senha" class="form-styling" type="text" name="password"/>
+                        <div class="btn-animate">
+                            <a class="btn-signin">Entrar</a>          
+                        </div>            
+                    </form>
+                        
+                    <form class="form-signup" action="" method="post" name="form">
+                        <label for="fullname">Nome completo</label>
+                        <input class="form-styling" type="text" name="fullname"/>
+                        <label for="email">Email</label>
+                        <input class="form-styling" type="text" name="email"/>
+                        <label for="password">Senha</label>
+                        <input class="form-styling" type="text" name="password"/>
+                        <label for="confirmpassword">Confirme sua senha</label>
+                        <input class="form-styling" type="text" name="confirmpassword"/>
+                        <a ng-click="checked = !checked" class="btn-signup">Cadastrar</a>
+                    </form>
+                      
+                    <div class="success">
+                        <div class="successtext">
+                            <p> Seu cadastro foi concluído!</p>
+                            <a class="btn-refresh">Entrar</a>                        
+                        </div>
+                    </div>
+                </div>          
+            </div>
         </main>
     </body>
 </html>

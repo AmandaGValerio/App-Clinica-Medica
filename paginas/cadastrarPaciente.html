@@ -4,46 +4,85 @@
         <meta charset="UTF-8">
         <title>Cadastrar Paciente</title>
         <link rel="stylesheet" href="../css/estilo.css">
+        <link rel="stylesheet" href="../css/estiloMenu.css">
         <link rel="stylesheet" href="../css/estiloCadastrarPaciente.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+    
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     </head>
 
     <body>
-
-        <header>
-            <a href=""><button class="btn-voltar btn">Voltar</button></a>
-        </header>
-
-        <main>
-            <p class="titulo1">Cadastrar Paciente</p>
-            <form>
-                <p>
-                    <label for="cNome">Nome:</label> <br>
-                    <input required type="text" id="Nome" name="txtNome" size="40" maxlength="35" placeholder="Nome completo">
-                </p>
-                <p>
-                    <label for="cNasc">Data de nascimento:</label> <br>
-                    <input required type="date" id="Nasc" name="txtNasc">
-                </p>
-                <p>
-                    <label for="cConv">Convênio:</label> <br>
-                    <input required type="text" id="Convenio" name="txtConvenio" size="40" maxlength="35" placeholder="Convênio">
-                </p>
-                <p>
-                    <label for="cTel">Telefone:</label> <br>
-                    <input required type="text" id="Telefone" name="txtTelefone" size="40" maxlength="35" placeholder="Telefone">
-                </p>
-                <p>
-                    <label for="cCpf">CPF:</label> <br>
-                    <input required type="text" id="cpf" name="txtCpf" size="40" maxlength="35" placeholder="Telefone">
-                </p>
-
-                <div class="botoes">
-                    <button class="btn">Cancelar</button>
-                    <button class="btn">Salvar</button>
+        <script>
+            $(document).ready(function() {
+                $("#sidebarCollapse").on("click", function() {
+                    $("#sidebar").toggleClass("active");
+                    $(this).toggleClass("active");
+                });
+            });
+        </script>
+        
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>Clínica NomeClínica</h3>
                 </div>
-            </form>
+          
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="#agendaSubmenu" data-toggle="collapse" aria-expanded="false">Agenda</a>
+                        <ul class="collapse list-unstyled" id="agendaSubmenu">
+                            <li><a href="#">Dr. João</a></li>
+                            <li><a href="#">Dra. Ana</a></li>
+                            <li><a href="#">Dra. Maria</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Buscar Paciente</a>
+                    </li>
+                    <li>
+                        <a href="#">Cadastrar Paciente</a>
+                    </li>
+                </ul>
+          
+                <ul class="list-unstyled sair">
+                    <li><a href="../index.html" class="btn-sair">Sair</a></li>
+                </ul>
+            </nav>
+          
+            <!-- Conteúdo da Página -->
+            <div id="content">
+                <div class="row py-4 px-5">
+                    <button type="button" id="sidebarCollapse" class="btn btn-menu"><span>Menu</span></button>  
+                </div>
 
-        </main>
+                <div id="conteudo">
+                    <h1 class="titulo-pag text-center">Cadastrar Paciente</h1>
 
+                    <form class="form-signup text-center" action="" method="post" name="form">
+                        
+                        <label for="cNome">Nome completo</label> <br>
+                        <input class="form-styling" required type="text" id="Nome" name="cNome" size="40" maxlength="35">
+
+                        <label for="email">Email</label>
+                        <input class="form-styling" type="text" name="email"/>
+
+                        <label for="password">Senha</label>
+                        <input class="form-styling" type="password" name="password"/>
+
+                        <label for="confirmpassword">Confirme sua senha</label>
+                        <input class="form-styling" type="password" name="confirmpassword"/>
+
+                        
+                        <a class="btn btn-cinza mt-3 mx-2">Cancelar</a>
+                        <a class="btn btn-menu mt-3 mx-2">Salvar</a>
+                    </form>
+
+                </div>
+            </div>
+              
+        </div>
     </body>
 </html>

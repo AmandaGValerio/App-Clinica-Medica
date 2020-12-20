@@ -1,0 +1,98 @@
+/* ------- SIDEBAR STYLE ------- */
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+ #sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #7B68EE;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar a,
+#sidebar a:hover,
+#sidebar a:focus {
+    color: inherit;
+    text-decoration: none;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: #7B68EE;
+    background: #fff;
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
+}
+
+ul.sair {
+  padding: 20px;
+}
+
+ul.sair a {
+  text-align: center;
+  font-size: 0.9em !important;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.btn-menu{
+    background: #1059FF !important; /*#6d7fcc*/
+    color: #fff !important;
+}
+
+a.btn-sair{
+    margin: 20px;
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    background: #1059FF !important;
+    color: #fff !important;
+}
+
+a.btn-sair:hover{
+    text-decoration: none;
+    color: #1059FF !important;
+    background: #fff !important;
+}
+
+
+/*----- CONTENT STYLE -----*/
+#content {
+  min-height: 100vh;
+  /* padding: 20px; */
+  /*transition: all 0.3s; */
+  width: 100%;
+}
+
+  

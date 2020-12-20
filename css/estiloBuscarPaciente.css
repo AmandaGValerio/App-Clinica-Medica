@@ -1,7 +1,3 @@
-main{
-    text-align: center;
-}
-
 div#busca{
     position: relative;
 }
@@ -12,7 +8,7 @@ div#busca input#txtBusca{
     margin: 2vh auto;
     padding: 2vh;
     border-radius: 8px;
-    border: 1px solid grey;
+    border: 1px solid #7B68EE;
     font-size: 12pt;
 }
 
@@ -29,5 +25,5 @@ div#busca button{
     border: none;
     border-radius: 0 8px 8px 0;
     font-size: 14pt;
-    background-color: grey;
+    background-color: #7B68EE;
 }
