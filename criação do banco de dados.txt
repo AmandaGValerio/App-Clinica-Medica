@@ -1,0 +1,36 @@
+CREATE DATABASE IF NOT EXISTS `app-clinica`
+        
+	CREATE TABLE IF NOT EXISTS `usuarios`(
+	`nome` VARCHAR(45) NOT NULL,
+	`email` VARCHAR(60) NOT NULL,
+	`senha` VARCHAR(20) NOT NULL
+	)
+        CREATE TABLE IF NOT EXISTS `medico`(
+        `cod` int(5) NOT NULL AUTO_INCREMENT,
+        `nomeM` varchar(50) NOT NULL,
+        `cpf` varchar(15) NOT NULL,
+		`telefone` varchar(17) NOT NULL,
+        PRIMARY KEY (`cod`)
+        ) 
+		
+        CREATE TABLE IF NOT EXISTS `paciente` (
+        `codP` int(11) NOT NULL UNSIGNED AUTO_INCREMENT,
+        `nome` varchar(50) NOT NULL,
+        `telefone` varchar(15) NOT NULL,
+		`cpf` varchar(15) NOT NULL,
+        `nascimento` DATE NOT NULL,
+        PRIMARY KEY (`codP`)
+        ) 
+
+        CREATE TABLE IF NOT EXISTS `consulta`{
+		`codC` int 20 NOT NULL 
+        `codM` int(5) NOT NULL,
+        `codP` int(11) NOT NULL,
+        `data` DATE NOT NULL,
+        `plano` varchar(20) NOT NULL,
+	`codplano` varchar(20)
+	PRIMARY KEY (`codC`)
+        } ENGINE=MyISAM;
+		
+	//collation utf8_bin
+	//pode adicionar codM e codP na tabela consulta como chave estrangeira
