@@ -61,23 +61,25 @@
                 <div id="conteudo">
                     <h1 class="titulo-pag text-center">Cadastrar Paciente</h1>
 
-                    <form class="form-signup text-center" action="" method="post" name="form">
+                    <form class="form-signup text-center" action="../php/cadastropaciente.php" method="post" name="form">
                         
                         <label for="cNome">Nome completo</label> <br>
-                        <input class="form-styling" required type="text" id="Nome" name="cNome" size="40" maxlength="35">
+                        <input class="form-styling" required type="text" id="cNome" name="cNome">
 
-                        <label for="email">Email</label>
-                        <input class="form-styling" type="text" name="email"/>
+                        <label for="cNasc">Data de nascimento</label> <br>
+                        <input class="form-styling" required type="date" id="cNasc" name="txtNasc">
 
-                        <label for="password">Senha</label>
-                        <input class="form-styling" type="password" name="password"/>
+                        <label for="cConv">Convênio:</label> <br>
+                        <input class="form-styling"  type="text" id="cConv" name="txtConvenio">
 
-                        <label for="confirmpassword">Confirme sua senha</label>
-                        <input class="form-styling" type="password" name="confirmpassword"/>
-
-                        
+                        <label for="cTel">Telefone:</label> <br>
+                        <input class="form-styling" required type="text" id="cTel" name="txtTelefone">
+    
+                        <label for="cCpf">CPF:</label> <br>
+                        <input class="form-styling" required type="text" id="cCpf" name="txtCpf">
+                    
                         <a class="btn btn-cinza mt-3 mx-2">Cancelar</a>
-                        <a class="btn btn-menu mt-3 mx-2">Salvar</a>
+                        <a class="btn btn-menu mt-3 mx-2"><input type="submit"> Salvar</a>
                     </form>
 
                 </div>
