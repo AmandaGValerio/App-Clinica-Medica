@@ -18,7 +18,7 @@ $pass = $_POST['password'];
 $sql = "SELECT `senha` FROM `usuarios` WHERE `nome` = '$user';";
 $result = mysqli_query($link, $sql);
 $row = mysqli_fetch_assoc($result);
-if ($row['senha'] == $pass){
+if ($row['senha'] == $pass && $pass != ""){
     echo "acesso ok";
     //redirecionar para a pagina principal
 }else{
