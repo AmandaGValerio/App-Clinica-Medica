@@ -1,0 +1,24 @@
+criar Paciente
+INSERT INTO `paciente`(`nome`, `telefone`, `cpf`, `nascimento`) VALUES (var, var, var, var)
+
+ler Paciente
+SELECT `codP`, `nome`, `telefone`, `cpf`, `nascimento` FROM `paciente` WHERE `cpf` = var
+
+atualizar Paciente
+UPDATE `paciente` SET `nome`= var,`telefone`= var,`cpf`= var,`nascimento`= var WHERE `cpf` = var
+
+deletar Paciente
+DELETE FROM `paciente` WHERE `cpf` = var
+
+
+criar medico
+INSERT INTO `medico`(`nomeM`, `cpf`, `telefone`) VALUES (var, var, var);
+
+ler médico
+SELECT `cod`, `nomeM`, `cpf`, `telefone` FROM `medico` WHERE `nomeM` = var;
+
+atualizar médico
+UPDATE `medico` SET `nomeM`= var,`cpf`= var,`telefone`= var WHERE `col` = var;
+
+deletar médico
+DELETE FROM `medico` WHERE  `col` = var;
