@@ -9,7 +9,7 @@ CREATE DATABASE IF NOT EXISTS `app-clinica`
         `cod` int(5) NOT NULL AUTO_INCREMENT,
         `nomeM` varchar(50) NOT NULL,
         `cpf` varchar(15) NOT NULL,
-		`telefone` varchar(17) NOT NULL,
+	`telefone` varchar(17) NOT NULL,
         PRIMARY KEY (`cod`)
         ) 
 		
@@ -17,7 +17,7 @@ CREATE DATABASE IF NOT EXISTS `app-clinica`
         `codP` int(11) NOT NULL UNSIGNED AUTO_INCREMENT,
         `nome` varchar(50) NOT NULL,
         `telefone` varchar(15) NOT NULL,
-		`cpf` varchar(15) NOT NULL,
+	`cpf` varchar(15) NOT NULL,
         `nascimento` DATE NOT NULL,
         PRIMARY KEY (`codP`)
         ) 
