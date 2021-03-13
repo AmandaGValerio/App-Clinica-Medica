@@ -19,10 +19,19 @@ $sql = "SELECT `senha` FROM `usuarios` WHERE `nome` = '$user';";
 $result = mysqli_query($link, $sql);
 $row = mysqli_fetch_assoc($result);
 if ($row['senha'] == $pass && $pass != ""){
-    echo "acesso ok";
-    //redirecionar para a pagina principal
+    if ($row['usuarios'] == "Maria"){
+        header('Location: ../paginas/homeR.html');
+    }
+    else {
+        header('Location: ../paginas/homeM.html');
+    }
 }else{
     //voltar para a página e exibir uma mensagem de erro
+    echo ("<SCRIPT LANGUAGE='JavaScript'>
+    window.alert('Usuário ou senha incorretoss')
+    window.location.href='../index.html';
+    </SCRIPT>");
+    //header('Location: ../index.html');
 }
 
 ?>
