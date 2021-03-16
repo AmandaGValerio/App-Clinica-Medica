@@ -22,6 +22,10 @@ $cpf = $_POST['txtCpf'];
 $sql = "INSERT INTO `paciente`(`nome`, `telefone`, `cpf`, `nascimento`) VALUES ('$nome','$telefone','$cpf','$nasc')";
 if (mysqli_query($link, $sql)) {
     //redirecionar para a pagina principal com mensagem de sucesso
+    echo ("<SCRIPT LANGUAGE='JavaScript'>
+    window.alert('Paciente cadastrado com sucesso!')
+    window.location.href='../paginas/homeR.html';
+    </SCRIPT>");
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($link);
 }
