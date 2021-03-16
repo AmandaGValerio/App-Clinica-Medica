@@ -24,7 +24,7 @@ if (mysqli_query($link, $sql)) {
     //redirecionar para a pagina principal com mensagem de sucesso
     echo ("<SCRIPT LANGUAGE='JavaScript'>
     window.alert('Paciente cadastrado com sucesso!')
-    window.location.href='../paginas/homeR.html';
+    window.location.href='../paginas/agendaMedicoR.html';
     </SCRIPT>");
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($link);

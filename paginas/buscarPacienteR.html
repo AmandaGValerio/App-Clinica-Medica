@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Buscar Paciente</title>
+        <link rel="stylesheet" href="../css/estilo.css">
+        <link rel="stylesheet" href="../css/estiloBuscarPaciente.css">
+        <link rel="stylesheet" href="../css/estiloMenu.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+        <script>
+            $(document).ready(function() {
+                $("#sidebarCollapse").on("click", function() {
+                    $("#sidebar").toggleClass("active");
+                    $(this).toggleClass("active");
+                });
+            });
+        </script>
+        
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>Clínica NomeClínica</h3>
+                </div>
+          
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="#agendaSubmenu" data-toggle="collapse" aria-expanded="false">Agenda</a>
+                        <ul class="collapse list-unstyled" id="agendaSubmenu">
+                            <li><a href="#">Dr. João</a></li>
+                            <li><a href="#">Dra. Ana</a></li>
+                            <li><a href="#">Dra. Maria</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Buscar Paciente</a>
+                    </li>
+                    <li>
+                        <a href="cadastrarPaciente.html">Cadastrar Paciente</a>
+                    </li>
+                </ul>
+          
+                <ul class="list-unstyled sair">
+                    <li><a href="../index.html" class="btn-sair">Sair</a></li>
+                </ul>
+            </nav>
+          
+            <!-- Conteúdo da Página -->
+            <div id="content">
+                <div class="row py-4 px-5">
+                    <button type="button" id="sidebarCollapse" class="btn btn-menu"><span>Menu</span></button>  
+                </div>
+
+                <div id="conteudo">
+                    <h1 class="titulo-pag text-center">Buscar Paciente</h1>
+                    <div id="busca" class="text-center">
+                        <button>
+                            <i class="zmdi zmdi-search zmdi-hc-2x"></i>
+                        </button>
+                        <input type="text" id="txtBusca" placeholder="Buscar cpf..."/>
+                    </div>
+                </div>
+        
+            </div>
+              
+        </div>
+    </body>
+</html>
