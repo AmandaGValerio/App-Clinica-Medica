@@ -5,27 +5,98 @@
 		<title>Exames</title>
 		<link rel="stylesheet" href="../css/estilo.css">
 		<link rel="stylesheet" href="../css/estiloExame.css">
+        <link rel="stylesheet" href="../css/estiloMenu.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 	</head>
 
+
 	<body>
-		<header>
-			<a href=""><button class="btn-voltar btn">Voltar</button></a>
-		</header>
+        <script>
+            $(document).ready(function() {
+                $("#sidebarCollapse").on("click", function() {
+                    $("#sidebar").toggleClass("active");
+                    $(this).toggleClass("active");
+                });
+            });
+        </script>
+        
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>Clínica NomeClínica</h3>
+                </div>
+          
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="#agendaSubmenu" data-toggle="collapse" aria-expanded="false">Agenda</a>
+                        <ul class="collapse list-unstyled" id="agendaSubmenu">
+                            <li><a href="#">Dr. João</a></li>
+                            <li><a href="#">Dra. Ana</a></li>
+                            <li><a href="#">Dra. Maria</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Buscar Paciente</a>
+                    </li>
+                    <li>
+                        <a href="#">Cadastrar Paciente</a>
+                    </li>
+                </ul>
+          
+                <ul class="list-unstyled sair">
+                    <li><a href="../index.html" class="btn-sair">Sair</a></li>
+                </ul>
+            </nav>
+          
+            <!-- Conteúdo da Página -->
+            <div id="content">
+                <div class="row py-4 px-5">
+                    <button type="button" id="sidebarCollapse" class="btn btn-menu"><span>Menu</span></button> 
+                </div>
 
-		<div id="filtro">
-			<label for="tipo">Filtrar:</label>
-			<select name="tipo" id="tipo">
-				<option value="ano" selected>Ano</option>
-				<option value="tipo">Tipo</option>
-			</select>
-		</div>
+                <div id="conteudo">
+                    <h1 class="titulo-pag text-center">Exames</h1>
+                    <div id="filtro">
+						<label for="tipo">Filtrar:</label>
+						<select name="tipo" id="tipo">
+							<option value="ano" selected>Ano</option>
+							<option value="tipo">Tipo</option>
+						</select>
+					</div>
 
-		<p class="titulo2">Exames de Nome do Paciente</p>
-
-		<section class="container">	</section>
-
-		<div id="botao">
-			<button class="diversos">+Exames</button>
-		</div>
-	</body>
+					<div class="documentos container m-5">
+                        <div class="doc row">
+							<div class="col-10">
+								<h4 class="nome-exame">Hemograma</h4>
+								<span class="data-exame">20/08/2019</span>
+							</div>
+							<div class="col-2">
+								<button class="btn"><span>visualizar</span></button> <!--abrir documento-->
+							</div>
+						</div>
+						<div class="doc row mt-4">
+							<div class="col-10">
+								<h4 class="nome-exame">Hemograma</h4>
+								<span class="data-exame">20/08/2019</span>
+							</div>
+							<div class="col-2">
+								<button class="btn"><span>visualizar</span></button>
+							</div>
+						</div>
+                    </div>
+                </div>
+			
+				<div class="text-center">
+					<button class="btn btn-menu"><span>+ Exames</spa></button>
+				</div>
+            </div>  
+        </div>
+    </body>
 </html>

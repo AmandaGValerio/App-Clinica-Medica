@@ -1,0 +1,10 @@
+button.btn{
+    border: none;
+    border-radius: 7px;
+    padding: 8px 15px;
+    color: white;
+    background-color: #1059FF;
+    width: fit-content;
+    font-size: 12pt;
+    text-align: right;
+}

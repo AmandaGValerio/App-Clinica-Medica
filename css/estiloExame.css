@@ -1,5 +1,4 @@
 div#filtro{
-    /*border: 1px solid black;*/
     text-align: right;
     width: 90%;
     margin: 0 auto;
@@ -16,6 +15,16 @@ div#filtro select{
     padding: 10px;
 }
 
-button.diversos{
-    padding: 15px;
+button.btn{
+    border: none;
+    border-radius: 7px;
+    padding: 8px 15px;
+    color: white;
+    background-color: rgb(214, 126, 241);
+    width: fit-content;
+    font-size: 12pt;
+}
+
+.nome-exame{
+    color: #1059FF;
 }

@@ -68,6 +68,8 @@ ul.sair a {
 .btn-menu{
     background: #1059FF !important; /*#6d7fcc*/
     color: #fff !important;
+    border: none;
+    font-size: 12pt !important;
 }
 
 a.btn-sair{
