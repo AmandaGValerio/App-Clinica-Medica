@@ -20,10 +20,10 @@ $result = mysqli_query($link, $sql);
 $row = mysqli_fetch_assoc($result);
 if ($row['senha'] == $pass && $pass != ""){
     if ($user == "maria"){
-        header('Location: ../paginas/homeR.html');
+        header('Location: ../paginas/agendaMedicoR.html');
     }
     else {
-        header('Location: ../paginas/homeM.html');
+        header('Location: ../paginas/agendaMedico.html');
     }
 }else{
     //voltar para a página e exibir uma mensagem de erro
