@@ -23,14 +23,21 @@ if($password == $confpassword){
     if (mysqli_query($link, $sql)) {
         //header('Location: ../index.html');
         echo ("<SCRIPT LANGUAGE='JavaScript'>
-        window.alert('Paciente cadastrado com sucesso!')
+        window.alert('Usuário cadastrado com sucesso!')
         window.location.href='../index.html';
         </SCRIPT>");
     } else {
-        echo "Error: " . $sql . "<br>" . mysqli_error($link);
+        //echo "Error: " . $sql . "<br>" . mysqli_error($link);
+        echo ("<SCRIPT LANGUAGE='JavaScript'>
+        window.alert('Um erro inesperado ocorreu. Tente novamente')
+        window.location.href='../index.html';
+        </SCRIPT>");
     }
 } else{
-    echo "senhas diferentes";
+    echo ("<SCRIPT LANGUAGE='JavaScript'>
+        window.alert('As senhas não correspondem!')
+        window.location.href='../index.html';
+        </SCRIPT>");
 }
 
 ?>

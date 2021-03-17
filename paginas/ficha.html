@@ -2,7 +2,7 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="UTF-8">
-		<title>Ficha</title>
+		<title>Ficha 2</title>
 		<link rel="stylesheet" href="../css/estilo.css">
 		<link rel="stylesheet" href="../css/estiloFicha.css">
         <link rel="stylesheet" href="../css/estiloMenu.css">
@@ -11,17 +11,6 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-		<style type="text/css">
-			#dados{
-				display: inline-grid;
-				grid-template-columns: 5.5fr 1fr 1fr;
-				justify-content: end;
-				/*border: 1px solid black;*/
-				width: 90%;
-				margin: 30px 50px;
-				padding: 20px;
-			}
-		</style>
 	</head>
 
 	<body>
@@ -42,20 +31,23 @@
                 </div>
           
                 <ul class="list-unstyled components">
-                    <li>
+                    <a href="agendaMedico.html">Agenda</a>
+                        <!--
                         <a href="#agendaSubmenu" data-toggle="collapse" aria-expanded="false">Agenda</a>
                         <ul class="collapse list-unstyled" id="agendaSubmenu">
                             <li><a href="#">Dr. João</a></li>
                             <li><a href="#">Dra. Ana</a></li>
                             <li><a href="#">Dra. Maria</a></li>
                         </ul>
-                    </li>
+                        -->
                     <li>
-                        <a href="#">Buscar Paciente</a>
+                        <a href="buscarPaciente.html">Buscar Paciente</a>
                     </li>
+                    <!--
                     <li>
                         <a href="#">Cadastrar Paciente</a>
                     </li>
+                    -->
                 </ul>
           
                 <ul class="list-unstyled sair">
@@ -75,11 +67,12 @@
 							<h1 class="titulo-pag text-center">Ficha - Nome do Paciente</h1>
 						</div>
 						<div class="col-4">
+							<button class="btn">Consultas</button>
 							<button class="btn">Histórico</button>
 							<button class="btn">Ficha</button>
 						</div>
 					</div>
-					<div class="row">
+					<div class="row" id="txtDados">
 						<!-- anotações sobre paciente -->
 					</div>
                     

@@ -13,11 +13,12 @@ if (!$link) {
     exit;
 }
 
-$var = $_POST['busca'];
+$var = $_POST['vCPF'];
 
 $sql = "SELECT `nome`, `telefone`, `cpf`, `nascimento` FROM `paciente` WHERE `cpf` = '$var'; ";
 $result = mysqli_query($link, $sql);
 $row = mysqli_fetch_assoc($result);
 
 //redirecionar para ficha e preencher com os dados do paciente
+header('Location: ../ficha.html');
 ?>
